@@ -32,13 +32,13 @@ public class Loan {
 		double RemainingBalance = LoanAmount;
 		int PaymentCnt = 1;
 		while (RemainingBalance >= this.GetPMT()) {
-			Payment payment = new Payment(RemainingBalance, PaymentCnt++, startDate, this);
+			Payment payment = new Payment(RemainingBalance, PaymentCnt++, startDate, this, false);
 			RemainingBalance = payment.getEndingBalance();
 			startDate = startDate.plusMonths(1);
 			loanPayments.add(payment);
 		}
 
-		Payment payment = new Payment(RemainingBalance, PaymentCnt++, startDate, this);
+		Payment payment = new Payment(RemainingBalance, PaymentCnt++, startDate, this, true);
 		loanPayments.add(payment);
 	}
 
