@@ -21,7 +21,7 @@
 							<transformers>
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>app.Game</mainClass>
+									<mainClass>app.StudentCalc</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
@@ -34,7 +34,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.0</version>
 				<configuration>
-					<release>14</release>
+					<release>15</release>
 				</configuration>
 			</plugin>
 
@@ -57,8 +57,8 @@
 		<!-- <JavaFX.Platform>mac</JavaFX.Platform> -->
 		<!-- <JavaFX.Platform>linux</JavaFX.Platform> -->
 
-		<java.version>1.14</java.version>
-		<JavaFX.Version>14</JavaFX.Version>
+		<java.version>1.15</java.version>
+		<JavaFX.Version>15</JavaFX.Version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 

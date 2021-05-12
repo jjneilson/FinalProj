@@ -28,7 +28,6 @@ public class StudentCalc extends Application {
 	}
 	
 	public void ShowScreen() {
-		// Parent root;
 		try {
 
 			FXMLLoader loader = new FXMLLoader();
